@@ -5,6 +5,7 @@ import axios from 'axios';
 import List from './components/List';
 import UserItem from './components/UserItem';
 import TodoItem from './components/TodoItem';
+import EventsExample from './components/EventExample';
 
 const App = () => {
   // Хук для фиксирования начального сотояния 
@@ -40,6 +41,7 @@ const App = () => {
 
   return (
     <div >
+      <EventsExample />
       <Card onClick={(num) => console.log('click', num)} variant={CardVariant.outlined} height='200px' width='300px'>
         <button>Кнопка</button>
       </Card>
